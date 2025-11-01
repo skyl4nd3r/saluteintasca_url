@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Come eliminare il tuo account Salute In Tasca - Istruzioni complete per la cancellazione dati">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Elimina Account - Salute In Tasca">
+    <meta property="og:description" content="Guida completa per eliminare il tuo account e i tuoi dati da Salute In Tasca">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tuousername.github.io/saluteintasca_url/delete-account.html">
+
+    <title>Eliminazione Account e Dati - Salute In Tasca</title>
+
+    <style>
+        /* CSS Variables */
+        :root {
+            --primary-blue: #007AFF;
+            --primary-dark: #0051D5;
+            --surface-light: #F2F2F7;
+            --surface-white: #FFFFFF;
+            --text-primary: #000000;
+            --text-secondary: #8E8E93;
+            --success: #34C759;
+            --error: #FF3B30;
+            --border-light: #C6C6C8;
+            --warning-bg: #FFF3CD;
+            --warning-border: #FFC107;
+            --warning-text: #856404;
+        }
+
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            color: var(--text-primary);
+            background: var(--surface-white);
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            background: var(--primary-blue);
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+            justify-content: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        nav a:focus {
+            outline: 2px solid white;
+            outline-offset: 2px;
+        }
+
+        /* Container */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        /* Main Content */
+        main {
+            background: var(--surface-white);
+            min-height: calc(100vh - 200px);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        section {
+            margin: 2.5rem 0;
+        }
+
+        h2 {
+            font-size: 1.75rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+            padding-top: 1rem;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            margin: 1.5rem 0 0.75rem 0;
+            color: var(--primary-blue);
+        }
+
+        p {
+            margin: 1rem 0;
+            line-height: 1.8;
+        }
+
+        ul, ol {
+            margin: 1rem 0 1rem 1.5rem;
+            line-height: 1.8;
+        }
+
+        li {
+            margin: 0.5rem 0;
+        }
+
+        strong {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        a {
+            color: var(--primary-blue);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        a:focus {
+            outline: 2px solid var(--primary-blue);
+            outline-offset: 2px;
+        }
+
+        /* Warning Box */
+        .warning-box {
+            background: #FFEBEE;
+            border-left: 4px solid var(--error);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 4px;
+        }
+
+        .warning-box h2 {
+            color: var(--error);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            padding-top: 0;
+        }
+
+        .warning-box strong {
+            color: var(--error);
+        }
+
+        .warning-box p {
+            margin: 0.5rem 0;
+        }
+
+        /* Info Box */
+        .info-box {
+            background: var(--surface-light);
+            border-left: 4px solid var(--primary-blue);
+            padding: 1.25rem;
+            margin: 1.5rem 0;
+            border-radius: 4px;
+        }
+
+        /* Contact Card */
+        .contact-card {
+            background: #E3F2FD;
+            border-left: 4px solid var(--primary-blue);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 4px;
+        }
+
+        .contact-card p {
+            margin: 0.5rem 0;
+        }
+
+        /* Checklist */
+        .checklist {
+            background: #F1F8E9;
+            border-left: 4px solid var(--success);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 4px;
+        }
+
+        .checklist li {
+            list-style: none;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .checklist li::before {
+            content: "✅";
+            position: absolute;
+            left: 0;
+        }
+
+        /* Steps */
+        ol.steps {
+            counter-reset: step-counter;
+            list-style: none;
+            margin-left: 0;
+        }
+
+        ol.steps li {
+            counter-increment: step-counter;
+            padding-left: 3rem;
+            position: relative;
+            margin: 1.5rem 0;
+        }
+
+        ol.steps li::before {
+            content: counter(step-counter);
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: var(--primary-blue);
+            color: white;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--surface-light);
+            padding: 2rem 1rem;
+            margin-top: 4rem;
+            text-align: center;
+            border-top: 1px solid var(--border-light);
+        }
+
+        footer p {
+            margin: 0.5rem 0;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: var(--primary-blue);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive */
+        @media (max-width: 640px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            h3 {
+                font-size: 1.15rem;
+            }
+
+            nav ul {
+                gap: 1rem;
+                font-size: 0.9rem;
+            }
+
+            .container {
+                padding: 1rem;
+            }
+
+            ol.steps li {
+                padding-left: 2.5rem;
+            }
+
+            ol.steps li::before {
+                width: 1.75rem;
+                height: 1.75rem;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="terms-of-service.html">Termini di Servizio</a></li>
+                <li><a href="support.html">Supporto</a></li>
+                <li><a href="delete-account.html" aria-current="page">Elimina Account</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Eliminazione Account e Dati</h1>
+
+            <section id="intro">
+                <div class="warning-box">
+                    <h2>⚠️ Attenzione</h2>
+                    <p>
+                        L'eliminazione dell'account è <strong>permanente e irreversibile</strong>.
+                    </p>
+                    <p>
+                        Una volta confermata la cancellazione, tutti i tuoi dati verranno eliminati
+                        definitivamente dai nostri sistemi e <strong>non potranno essere recuperati</strong>.
+                    </p>
+                </div>
+                <p>
+                    Questa pagina ti guiderà passo dopo passo nel processo di eliminazione del tuo account
+                    <strong>Salute In Tasca</strong> e di tutti i dati personali e sanitari associati,
+                    in conformità con il tuo diritto alla cancellazione previsto dall'Art. 17 del GDPR
+                    ("Diritto all'oblio").
+                </p>
+            </section>
+
+            <section id="cosa-viene-eliminato">
+                <h2>Cosa Verrà Eliminato</h2>
+                <p>Quando elimini il tuo account, verranno cancellati <strong>permanentemente</strong>:</p>
+                <div class="checklist">
+                    <ul>
+                        <li>Tutti i tuoi dati personali (nome, cognome, data di nascita, email, ecc.)</li>
+                        <li>Tutti i documenti medici caricati (referti, esami, certificati)</li>
+                        <li>Storico completo di appuntamenti medici e visite</li>
+                        <li>Tutti i parametri vitali registrati (pressione, glicemia, peso, ecc.)</li>
+                        <li>Registro vaccinazioni e certificati vaccinali</li>
+                        <li>Terapie farmacologiche e promemoria farmaci</li>
+                        <li>Note personali e annotazioni sanitarie</li>
+                        <li>Backup cloud (se attivati su iCloud o Google Drive)</li>
+                        <li>Profili familiari creati (se presenti)</li>
+                        <li>Impostazioni e preferenze dell'app</li>
+                    </ul>
+                </div>
+                <p>
+                    <strong>Nota:</strong> Alcuni dati anonimi aggregati potrebbero essere conservati per
+                    finalità statistiche, ma questi dati non saranno più associati alla tua identità.
+                </p>
+            </section>
+
+            <section id="prima-di-eliminare">
+                <h2>Prima di Procedere</h2>
+                <p>
+                    Ti consigliamo <strong>vivamente</strong> di completare i seguenti passaggi prima di
+                    eliminare il tuo account:
+                </p>
+                <ol class="steps">
+                    <li>
+                        <strong>Esporta i tuoi dati:</strong> Vai su <strong>Impostazioni → Esporta Dati</strong>
+                        nell'app e scarica una copia completa della tua cartella medica in formato PDF o ZIP.
+                    </li>
+                    <li>
+                        <strong>Scarica i documenti importanti:</strong> Assicurati di salvare localmente o
+                        inviare via email tutti i referti medici, certificati e documenti che potrebbero
+                        servirti in futuro.
+                    </li>
+                    <li>
+                        <strong>Verifica gli appuntamenti futuri:</strong> Controlla di aver trascritto da
+                        qualche altra parte eventuali appuntamenti medici programmati.
+                    </li>
+                    <li>
+                        <strong>Salva informazioni critiche:</strong> Annota allergie, terapie in corso,
+                        vaccinazioni e altre informazioni mediche importanti.
+                    </li>
+                </ol>
+                <div class="info-box">
+                    <p>
+                        <strong>💡 Suggerimento:</strong> Se non sei sicuro di voler eliminare l'account,
+                        puoi semplicemente disattivare le notifiche o eliminare singoli documenti invece
+                        di cancellare l'intero account. Vedi la sezione
+                        <a href="#alternative">Alternative all'Eliminazione</a>.
+                    </p>
+                </div>
+            </section>
+
+            <section id="istruzioni">
+                <h2>Come Eliminare l'Account</h2>
+                <p>
+                    Puoi eliminare il tuo account utilizzando uno dei due metodi seguenti:
+                </p>
+
+                <h3>Metodo 1: Dall'App (Consigliato)</h3>
+                <p>
+                    Questo è il metodo più rapido e immediato per eliminare il tuo account:
+                </p>
+                <ol class="steps">
+                    <li>Apri l'applicazione <strong>Salute In Tasca</strong> sul tuo dispositivo</li>
+                    <li>Vai su <strong>Profilo</strong> (icona in basso a destra)</li>
+                    <li>Tocca <strong>Impostazioni</strong> (icona ingranaggio)</li>
+                    <li>Scorri fino in fondo e tocca <strong>"Elimina Account"</strong> (in rosso)</li>
+                    <li>Leggi attentamente l'avviso che appare</li>
+                    <li>Tocca <strong>"Elimina Account e Dati"</strong></li>
+                    <li>Conferma la tua identità con <strong>Face ID, Touch ID o Password</strong></li>
+                    <li>Inserisci la tua password di conferma finale</li>
+                    <li>Tocca <strong>"Elimina Definitivamente"</strong></li>
+                    <li>Riceverai un'email di conferma all'indirizzo registrato (se fornito)</li>
+                </ol>
+                <p>
+                    L'eliminazione dei dati dall'app è <strong>immediata</strong>. I backup cloud verranno
+                    rimossi entro 30 giorni.
+                </p>
+
+                <h3>Metodo 2: Richiesta via Email</h3>
+                <p>
+                    Se non puoi accedere all'app (ad esempio perché hai perso il dispositivo, dimenticato
+                    la password o l'app non si avvia), puoi inviare una richiesta via email:
+                </p>
+                <div class="contact-card">
+                    <p><strong>📧 Email:</strong> <a href="mailto:privacy@saluteintasca.it">privacy@saluteintasca.it</a></p>
+                    <p><strong>📌 Oggetto:</strong> Richiesta eliminazione account - GDPR Art. 17</p>
+                    <p><strong>📝 Includi nel messaggio:</strong></p>
+                    <ul>
+                        <li>Nome e cognome completo</li>
+                        <li>Indirizzo email registrato nell'app (se fornito)</li>
+                        <li>Data di nascita (per verifica identità)</li>
+                        <li>Modello del dispositivo utilizzato (es. iPhone 13, Samsung Galaxy S21)</li>
+                        <li>Conferma esplicita: "Richiedo l'eliminazione completa del mio account e di tutti i dati associati"</li>
+                    </ul>
+                </div>
+                <p>
+                    Riceverai una risposta entro <strong>30 giorni</strong> dalla richiesta, come previsto
+                    dal GDPR. Ti potrebbe essere richiesta documentazione aggiuntiva per verificare la tua
+                    identità prima di procedere con la cancellazione.
+                </p>
+            </section>
+
+            <section id="tempi">
+                <h2>Tempi di Cancellazione</h2>
+                <p>I tempi di cancellazione variano a seconda del tipo di dato:</p>
+                <div class="info-box">
+                    <ul>
+                        <li>
+                            <strong>Dati in-app (locale):</strong> <span style="color: var(--success);">Immediata</span>
+                            - I dati vengono rimossi istantaneamente dal tuo dispositivo.
+                        </li>
+                        <li>
+                            <strong>Backup cloud (iCloud/Google Drive):</strong> Entro <strong>30 giorni</strong>
+                            dalla richiesta.
+                        </li>
+                        <li>
+                            <strong>Log di sistema e dati tecnici:</strong> Entro <strong>90 giorni</strong>,
+                            conservati solo per motivi di sicurezza e debugging.
+                        </li>
+                        <li>
+                            <strong>Backup di sicurezza:</strong> Rimossi entro <strong>90 giorni</strong>
+                            secondo le nostre policy di retention.
+                        </li>
+                    </ul>
+                </div>
+                <p>
+                    <strong>Nota importante:</strong> Dopo l'eliminazione, non sarà più possibile recuperare
+                    i dati cancellati, nemmeno contattando il supporto tecnico.
+                </p>
+            </section>
+
+            <section id="alternative">
+                <h2>Alternative all'Eliminazione</h2>
+                <p>
+                    Se non sei sicuro di voler eliminare completamente il tuo account, considera queste alternative:
+                </p>
+                <ul>
+                    <li>
+                        <strong>📤 Esportare i dati:</strong> Scarica una copia dei tuoi dati e conservali
+                        esternamente, senza eliminare l'account. Così potrai sempre consultarli in futuro
+                        se ne avrai bisogno.
+                    </li>
+                    <li>
+                        <strong>🔕 Disattivare le notifiche:</strong> Se sei infastidito dalle notifiche,
+                        puoi semplicemente disattivarle temporaneamente da <strong>Impostazioni → Notifiche</strong>.
+                    </li>
+                    <li>
+                        <strong>🗑️ Eliminare documenti specifici:</strong> Invece di cancellare tutto, puoi
+                        eliminare solo i documenti sensibili che non vuoi più conservare.
+                    </li>
+                    <li>
+                        <strong>👤 Rimuovere profili familiari:</strong> Se hai creato profili per familiari,
+                        puoi eliminare solo quelli specifici mantenendo il tuo profilo principale.
+                    </li>
+                    <li>
+                        <strong>🔒 Disattivare il backup cloud:</strong> Se non vuoi che i dati siano su cloud,
+                        disattiva il backup da <strong>Impostazioni → Backup → Disattiva</strong>.
+                    </li>
+                    <li>
+                        <strong>⏸️ Pausa temporanea:</strong> Puoi semplicemente smettere di usare l'app
+                        senza eliminarla. I tuoi dati rimarranno salvati localmente e potrai accedervi
+                        quando vorrai.
+                    </li>
+                </ul>
+            </section>
+
+            <section id="dopo-eliminazione">
+                <h2>Dopo l'Eliminazione</h2>
+                <p>Una volta completata la cancellazione del tuo account:</p>
+                <ul>
+                    <li>
+                        <strong>✉️ Riceverai un'email di conferma</strong> all'indirizzo registrato (se fornito),
+                        che attesta l'avvenuta eliminazione dei dati.
+                    </li>
+                    <li>
+                        <strong>🚫 Non potrai più accedere all'app</strong> con le credenziali precedenti.
+                    </li>
+                    <li>
+                        <strong>❌ Non potrai recuperare i dati eliminati</strong> in alcun modo.
+                    </li>
+                    <li>
+                        <strong>✅ Potrai creare un nuovo account in futuro</strong> con gli stessi dati
+                        personali, ma dovrai ricominciare da zero con una cartella medica vuota.
+                    </li>
+                    <li>
+                        <strong>🔒 I tuoi diritti GDPR saranno rispettati</strong> e i dati non saranno più
+                        trattati.
+                    </li>
+                </ul>
+            </section>
+
+            <section id="diritti-gdpr">
+                <h2>I Tuoi Diritti (GDPR)</h2>
+                <p>
+                    Secondo il Regolamento Generale sulla Protezione dei Dati (GDPR - Regolamento UE 2016/679),
+                    hai i seguenti diritti relativi ai tuoi dati:
+                </p>
+                <ul>
+                    <li>
+                        <strong>Diritto all'oblio (Art. 17):</strong> Diritto di richiedere la cancellazione
+                        dei tuoi dati personali.
+                    </li>
+                    <li>
+                        <strong>Diritto di accesso (Art. 15):</strong> Diritto di ottenere una copia dei
+                        tuoi dati prima della cancellazione.
+                    </li>
+                    <li>
+                        <strong>Diritto alla portabilità (Art. 20):</strong> Diritto di esportare i dati
+                        in formato leggibile.
+                    </li>
+                </ul>
+                <p>
+                    Per maggiori informazioni sui tuoi diritti, consulta la nostra
+                    <a href="privacy-policy.html">Privacy Policy</a> completa.
+                </p>
+            </section>
+
+            <section id="contatti">
+                <h2>Hai Bisogno di Aiuto?</h2>
+                <p>
+                    Se hai domande o difficoltà nel processo di eliminazione dell'account, il nostro team
+                    di supporto è qui per aiutarti:
+                </p>
+                <div class="contact-card">
+                    <p><strong>📧 Supporto:</strong> <a href="mailto:support@saluteintasca.it">support@saluteintasca.it</a></p>
+                    <p><strong>🔒 Privacy:</strong> <a href="mailto:privacy@saluteintasca.it">privacy@saluteintasca.it</a></p>
+                    <p><strong>❓ FAQ:</strong> <a href="support.html">Pagina di Supporto</a></p>
+                    <p><strong>⏱️ Tempo di risposta:</strong> Entro 48 ore lavorative</p>
+                </div>
+                <p>
+                    Prima di contattarci, ti invitiamo a leggere le <a href="support.html">FAQ</a> dove
+                    potresti trovare risposte immediate alle domande più comuni.
+                </p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Salute In Tasca. Tutti i diritti riservati.</p>
+            <p>
+                <a href="mailto:privacy@saluteintasca.it">privacy@saluteintasca.it</a> |
+                <a href="mailto:support@saluteintasca.it">support@saluteintasca.it</a>
+            </p>
+            <p>
+                <a href="index.html">Home</a> |
+                <a href="privacy-policy.html">Privacy Policy</a> |
+                <a href="terms-of-service.html">Termini di Servizio</a> |
+                <a href="support.html">Supporto</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

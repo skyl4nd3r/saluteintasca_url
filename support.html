@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Supporto e Assistenza per Salute In Tasca - FAQ, guide e contatti">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Supporto - Salute In Tasca">
+    <meta property="og:description" content="Centro assistenza con FAQ e supporto per l'app Salute In Tasca">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tuousername.github.io/saluteintasca_url/support.html">
+
+    <title>Supporto e Assistenza - Salute In Tasca</title>
+
+    <style>
+        /* CSS Variables */
+        :root {
+            --primary-blue: #007AFF;
+            --primary-dark: #0051D5;
+            --surface-light: #F2F2F7;
+            --surface-white: #FFFFFF;
+            --text-primary: #000000;
+            --text-secondary: #8E8E93;
+            --success: #34C759;
+            --error: #FF3B30;
+            --border-light: #C6C6C8;
+        }
+
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            color: var(--text-primary);
+            background: var(--surface-white);
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            background: var(--primary-blue);
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+            justify-content: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        nav a:focus {
+            outline: 2px solid white;
+            outline-offset: 2px;
+        }
+
+        /* Container */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        /* Main Content */
+        main {
+            background: var(--surface-white);
+            min-height: calc(100vh - 200px);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+            text-align: center;
+        }
+
+        .intro {
+            text-align: center;
+            color: var(--text-secondary);
+            margin-bottom: 3rem;
+            font-size: 1.1rem;
+        }
+
+        section {
+            margin: 3rem 0;
+        }
+
+        h2 {
+            font-size: 1.75rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-primary);
+            padding-top: 1rem;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            margin: 1.5rem 0 0.75rem 0;
+            color: var(--primary-blue);
+        }
+
+        p {
+            margin: 1rem 0;
+            line-height: 1.8;
+        }
+
+        ul {
+            margin: 1rem 0 1rem 1.5rem;
+            line-height: 1.8;
+        }
+
+        li {
+            margin: 0.5rem 0;
+        }
+
+        strong {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        a {
+            color: var(--primary-blue);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        a:focus {
+            outline: 2px solid var(--primary-blue);
+            outline-offset: 2px;
+        }
+
+        /* FAQ Details/Summary */
+        details {
+            background: white;
+            border: 1px solid var(--border-light);
+            border-radius: 8px;
+            padding: 1rem;
+            margin: 0.75rem 0;
+            transition: box-shadow 0.2s;
+        }
+
+        details:hover {
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        summary {
+            cursor: pointer;
+            font-weight: 600;
+            user-select: none;
+            font-size: 1.05rem;
+            color: var(--text-primary);
+            padding: 0.5rem;
+        }
+
+        summary:hover {
+            color: var(--primary-blue);
+        }
+
+        summary:focus {
+            outline: 2px solid var(--primary-blue);
+            outline-offset: 2px;
+        }
+
+        details[open] summary {
+            margin-bottom: 1rem;
+            color: var(--primary-blue);
+            padding-bottom: 0.75rem;
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        details p {
+            padding: 0 0.5rem;
+            line-height: 1.8;
+        }
+
+        /* Requirements Section */
+        .requirements {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .req-ios, .req-android {
+            background: var(--surface-light);
+            padding: 1.5rem;
+            border-radius: 12px;
+            border: 2px solid var(--border-light);
+        }
+
+        .req-ios h3, .req-android h3 {
+            margin-top: 0;
+            font-size: 1.5rem;
+        }
+
+        .req-ios {
+            border-color: var(--primary-blue);
+        }
+
+        .req-android {
+            border-color: var(--success);
+        }
+
+        /* Contact Card */
+        .contact-card {
+            background: var(--surface-light);
+            border-left: 4px solid var(--primary-blue);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 4px;
+        }
+
+        .contact-card p {
+            margin: 0.75rem 0;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--surface-light);
+            padding: 2rem 1rem;
+            margin-top: 4rem;
+            text-align: center;
+            border-top: 1px solid var(--border-light);
+        }
+
+        footer p {
+            margin: 0.5rem 0;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: var(--primary-blue);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive */
+        @media (max-width: 640px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            h3 {
+                font-size: 1.15rem;
+            }
+
+            nav ul {
+                gap: 1rem;
+                font-size: 0.9rem;
+            }
+
+            .container {
+                padding: 1rem;
+            }
+
+            summary {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="terms-of-service.html">Termini di Servizio</a></li>
+                <li><a href="support.html" aria-current="page">Supporto</a></li>
+                <li><a href="delete-account.html">Elimina Account</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Supporto e Assistenza</h1>
+            <p class="intro">
+                Benvenuto nel centro assistenza di Salute In Tasca. Qui troverai risposte alle domande più
+                frequenti e informazioni su come utilizzare al meglio l'app.
+            </p>
+
+            <section id="faq">
+                <h2>Domande Frequenti (FAQ)</h2>
+
+                <details>
+                    <summary>Come posso creare un nuovo appuntamento?</summary>
+                    <p>
+                        Per creare un nuovo appuntamento, apri l'app e vai nella sezione <strong>"Appuntamenti"</strong>.
+                        Tocca il pulsante <strong>"+"</strong> in alto a destra, quindi inserisci i dettagli
+                        dell'appuntamento: data, ora, luogo, medico e note eventuali. Puoi anche impostare un
+                        promemoria che ti avviserà prima dell'appuntamento. Una volta completato, tocca
+                        <strong>"Salva"</strong>.
+                    </p>
+                </details>
+
+                <details>
+                    <summary>I miei dati sono al sicuro?</summary>
+                    <p>
+                        Sì, la sicurezza dei tuoi dati è la nostra massima priorità. Tutti i dati sanitari
+                        sensibili sono <strong>crittografati end-to-end</strong> con algoritmo AES-256. I dati
+                        vengono salvati principalmente sul tuo dispositivo e puoi proteggere l'accesso all'app
+                        con <strong>Face ID, Touch ID o password</strong>. Se attivi il backup cloud, i dati
+                        vengono crittografati prima dell'upload su iCloud o Google Drive. Per maggiori dettagli,
+                        consulta la nostra <a href="privacy-policy.html">Privacy Policy</a>.
+                    </p>
+                </details>
+
+                <details>
+                    <summary>Come posso esportare i miei documenti?</summary>
+                    <p>
+                        Per esportare un documento, apri il documento che desideri condividere e tocca l'icona
+                        di <strong>condivisione</strong> (quadrato con freccia verso l'alto) in alto a destra.
+                        Potrai scegliere di esportare il documento in formato <strong>PDF</strong> e condividerlo
+                        via email, messaggi o salvarlo in altre app. Puoi anche esportare l'intera cartella
+                        medica andando su <strong>Impostazioni → Esporta Dati</strong>.
+                    </p>
+                </details>
+
+                <details>
+                    <summary>L'app funziona offline?</summary>
+                    <p>
+                        Sì, <strong>Salute In Tasca funziona completamente offline</strong>. Tutti i tuoi dati
+                        sono salvati localmente sul tuo dispositivo, quindi puoi consultare la tua cartella
+                        medica, visualizzare documenti e aggiungere nuovi appuntamenti anche senza connessione
+                        internet. La connessione è necessaria solo per il backup cloud (se attivato) e per
+                        aggiornamenti dell'app.
+                    </p>
+                </details>
+
+                <details>
+                    <summary>Come posso eliminare il mio account?</summary>
+                    <p>
+                        Per eliminare il tuo account e tutti i dati associati, vai su <strong>Profilo →
+                        Impostazioni → Elimina Account</strong>. Ti consigliamo di leggere prima le istruzioni
+                        complete nella <a href="delete-account.html">pagina dedicata all'eliminazione account</a>,
+                        poiché questa operazione è <strong>permanente e irreversibile</strong>. Prima di
+                        procedere, ti consigliamo di esportare i tuoi dati importanti.
+                    </p>
+                </details>
+
+                <details>
+                    <summary>Posso gestire più profili (familiari)?</summary>
+                    <p>
+                        Sì, puoi creare e gestire profili separati per ogni membro della famiglia. Vai su
+                        <strong>Profilo → Gestione Profili → Aggiungi Profilo</strong>. Ogni profilo avrà
+                        la propria cartella medica indipendente con dati separati e protetti. Questo è utile
+                        per gestire i dati sanitari di bambini, anziani o altri familiari. Il passaggio tra
+                        profili è semplice e sicuro.
+                    </p>
+                </details>
+
+                <details>
+                    <summary>Come imposto i promemoria per i farmaci?</summary>
+                    <p>
+                        Vai nella sezione <strong>"Farmaci"</strong>, tocca <strong>"+"</strong> per aggiungere
+                        un nuovo farmaco. Inserisci il nome del farmaco, dosaggio, frequenza di assunzione e
+                        orari. Attiva l'opzione <strong>"Promemoria"</strong> e l'app ti invierà notifiche
+                        push agli orari impostati. Puoi modificare o disattivare i promemoria in qualsiasi momento.
+                    </p>
+                </details>
+
+                <details>
+                    <summary>Quali formati di file posso caricare?</summary>
+                    <p>
+                        Puoi caricare i seguenti formati:
+                    </p>
+                    <ul>
+                        <li><strong>Documenti:</strong> PDF, DOC, DOCX, TXT</li>
+                        <li><strong>Immagini:</strong> JPG, JPEG, PNG, HEIC</li>
+                        <li><strong>Altri:</strong> ZIP per archivi compressi</li>
+                    </ul>
+                    <p>
+                        La dimensione massima per singolo file è di <strong>50 MB</strong>. Per documenti
+                        più grandi, ti consigliamo di comprimerli o dividerli.
+                    </p>
+                </details>
+
+                <details>
+                    <summary>Come funziona il backup automatico?</summary>
+                    <p>
+                        Puoi attivare il backup automatico su <strong>iCloud</strong> (iOS) o <strong>Google
+                        Drive</strong> (Android) andando su <strong>Impostazioni → Backup</strong>. Una volta
+                        attivato, l'app sincronizzerà automaticamente i tuoi dati crittografati sul cloud ogni
+                        volta che sei connesso a WiFi. In caso di cambio dispositivo o reinstallazione dell'app,
+                        potrai ripristinare tutti i dati dal backup.
+                    </p>
+                </details>
+
+                <details>
+                    <summary>Posso condividere i miei dati con il medico?</summary>
+                    <p>
+                        Sì, puoi condividere specifici documenti o un report completo con il tuo medico. Apri
+                        il documento o vai su <strong>Impostazioni → Genera Report</strong>, quindi scegli
+                        l'opzione di condivisione (email, WhatsApp, AirDrop). Il report verrà generato in
+                        formato PDF e potrai inviarlo in modo sicuro al tuo medico.
+                    </p>
+                </details>
+
+                <details>
+                    <summary>L'app è disponibile in altre lingue?</summary>
+                    <p>
+                        Attualmente l'app è disponibile solo in <strong>italiano</strong>. Stiamo lavorando
+                        per aggiungere il supporto per altre lingue nelle prossime versioni. Resta aggiornato
+                        seguendo gli aggiornamenti dell'app negli store.
+                    </p>
+                </details>
+
+                <details>
+                    <summary>Quanto costa l'app?</summary>
+                    <p>
+                        <strong>Salute In Tasca è completamente gratuita</strong>, senza acquisti in-app,
+                        abbonamenti o pubblicità. Crediamo che la salute sia un diritto fondamentale e vogliamo
+                        rendere questo strumento accessibile a tutti.
+                    </p>
+                </details>
+            </section>
+
+            <section id="requisiti">
+                <h2>Requisiti di Sistema</h2>
+                <div class="requirements">
+                    <div class="req-ios">
+                        <h3>📱 iOS</h3>
+                        <ul>
+                            <li><strong>Sistema operativo:</strong> iOS 14.0 o successivo</li>
+                            <li><strong>Dispositivi compatibili:</strong> iPhone 6s o successivo</li>
+                            <li><strong>iPad:</strong> iPad (5ª generazione) o successivo</li>
+                            <li><strong>iPod Touch:</strong> 7ª generazione</li>
+                            <li><strong>Spazio richiesto:</strong> 100 MB (più spazio per documenti)</li>
+                            <li><strong>Connessione:</strong> Non richiesta (opzionale per backup)</li>
+                        </ul>
+                    </div>
+                    <div class="req-android">
+                        <h3>🤖 Android</h3>
+                        <ul>
+                            <li><strong>Sistema operativo:</strong> Android 8.0 (Oreo) o successivo</li>
+                            <li><strong>Architettura:</strong> ARM, ARM64, x86</li>
+                            <li><strong>Spazio richiesto:</strong> 50 MB (più spazio per documenti)</li>
+                            <li><strong>RAM consigliata:</strong> 2 GB o superiore</li>
+                            <li><strong>Connessione:</strong> Non richiesta (opzionale per backup)</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contatti">
+                <h2>Contattaci</h2>
+                <p>Non hai trovato la risposta che cercavi? Siamo qui per aiutarti!</p>
+                <div class="contact-card">
+                    <p><strong>📧 Email Supporto:</strong> <a href="mailto:support@saluteintasca.it">support@saluteintasca.it</a></p>
+                    <p><strong>🔒 Email Privacy:</strong> <a href="mailto:privacy@saluteintasca.it">privacy@saluteintasca.it</a></p>
+                    <p><strong>⏱️ Tempo di risposta:</strong> Entro 48 ore lavorative</p>
+                    <p><strong>🕐 Orari:</strong> Lunedì - Venerdì, 9:00 - 18:00 (ora italiana)</p>
+                </div>
+                <p>
+                    Quando ci contatti, ti preghiamo di includere:
+                </p>
+                <ul>
+                    <li>Modello del dispositivo (es. iPhone 13, Samsung Galaxy S21)</li>
+                    <li>Versione del sistema operativo (es. iOS 17.1, Android 13)</li>
+                    <li>Versione dell'app (visibile in Impostazioni → Info)</li>
+                    <li>Descrizione dettagliata del problema o della domanda</li>
+                </ul>
+            </section>
+
+            <section id="feedback">
+                <h2>Invia Feedback</h2>
+                <p>
+                    Il tuo feedback è prezioso per aiutarci a migliorare <strong>Salute In Tasca</strong>.
+                    Ci piacerebbe sentire i tuoi suggerimenti, idee per nuove funzionalità o segnalazioni
+                    di bug.
+                </p>
+                <div class="contact-card">
+                    <p><strong>💡 Email Feedback:</strong> <a href="mailto:feedback@saluteintasca.it">feedback@saluteintasca.it</a></p>
+                    <p>Oppure lascia una recensione su:</p>
+                    <p>
+                        <strong>⭐ App Store</strong> (iOS) | <strong>⭐ Google Play</strong> (Android)
+                    </p>
+                </div>
+            </section>
+
+            <section id="risorse">
+                <h2>Altre Risorse</h2>
+                <ul>
+                    <li><a href="privacy-policy.html">📄 Privacy Policy</a> - Come proteggiamo i tuoi dati</li>
+                    <li><a href="terms-of-service.html">📋 Termini di Servizio</a> - Condizioni di utilizzo dell'app</li>
+                    <li><a href="delete-account.html">🗑️ Elimina Account</a> - Istruzioni per cancellare i tuoi dati</li>
+                    <li><a href="index.html">🏠 Torna alla Home</a> - Scopri tutte le funzionalità dell'app</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Salute In Tasca. Tutti i diritti riservati.</p>
+            <p>
+                <a href="mailto:privacy@saluteintasca.it">privacy@saluteintasca.it</a> |
+                <a href="mailto:support@saluteintasca.it">support@saluteintasca.it</a>
+            </p>
+            <p>
+                <a href="index.html">Home</a> |
+                <a href="privacy-policy.html">Privacy Policy</a> |
+                <a href="terms-of-service.html">Termini di Servizio</a> |
+                <a href="support.html">Supporto</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

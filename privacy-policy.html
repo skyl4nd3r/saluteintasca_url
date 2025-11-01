@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Privacy Policy di Salute In Tasca - Scopri come proteggiamo i tuoi dati secondo il GDPR">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Privacy Policy - Salute In Tasca">
+    <meta property="og:description" content="Informativa sulla privacy conforme al GDPR per l'app Salute In Tasca">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tuousername.github.io/saluteintasca_url/privacy-policy.html">
+
+    <title>Privacy Policy - Salute In Tasca</title>
+
+    <style>
+        /* CSS Variables */
+        :root {
+            --primary-blue: #007AFF;
+            --primary-dark: #0051D5;
+            --surface-light: #F2F2F7;
+            --surface-white: #FFFFFF;
+            --text-primary: #000000;
+            --text-secondary: #8E8E93;
+            --success: #34C759;
+            --error: #FF3B30;
+            --border-light: #C6C6C8;
+            --warning-bg: #FFF3CD;
+            --warning-border: #FFC107;
+            --warning-text: #856404;
+        }
+
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            color: var(--text-primary);
+            background: var(--surface-white);
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            background: var(--primary-blue);
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+            justify-content: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        nav a:focus {
+            outline: 2px solid white;
+            outline-offset: 2px;
+        }
+
+        /* Container */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        /* Main Content */
+        main {
+            background: var(--surface-white);
+            min-height: calc(100vh - 200px);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .last-updated {
+            color: var(--text-secondary);
+            font-style: italic;
+            margin-bottom: 2rem;
+            font-size: 0.95rem;
+        }
+
+        section {
+            margin: 2.5rem 0;
+        }
+
+        h2 {
+            font-size: 1.75rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+            padding-top: 1rem;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            margin: 1.5rem 0 0.75rem 0;
+            color: var(--primary-blue);
+        }
+
+        p {
+            margin: 1rem 0;
+            line-height: 1.8;
+        }
+
+        ul, ol {
+            margin: 1rem 0 1rem 1.5rem;
+            line-height: 1.8;
+        }
+
+        li {
+            margin: 0.5rem 0;
+        }
+
+        strong {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        a {
+            color: var(--primary-blue);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        a:focus {
+            outline: 2px solid var(--primary-blue);
+            outline-offset: 2px;
+        }
+
+        /* Warning Box */
+        .warning-box {
+            background: var(--warning-bg);
+            border-left: 4px solid var(--warning-border);
+            padding: 1.25rem;
+            margin: 1.5rem 0;
+            border-radius: 4px;
+        }
+
+        .warning-box strong {
+            color: var(--warning-text);
+        }
+
+        .warning-box p {
+            margin: 0.5rem 0;
+        }
+
+        /* Info Box */
+        .info-box {
+            background: var(--surface-light);
+            border-left: 4px solid var(--primary-blue);
+            padding: 1.25rem;
+            margin: 1.5rem 0;
+            border-radius: 4px;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--surface-light);
+            padding: 2rem 1rem;
+            margin-top: 4rem;
+            text-align: center;
+            border-top: 1px solid var(--border-light);
+        }
+
+        footer p {
+            margin: 0.5rem 0;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: var(--primary-blue);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Table of Contents */
+        .toc {
+            background: var(--surface-light);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+
+        .toc h2 {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            padding-top: 0;
+        }
+
+        .toc ul {
+            list-style: none;
+            margin-left: 0;
+        }
+
+        .toc li {
+            margin: 0.5rem 0;
+        }
+
+        /* Responsive */
+        @media (max-width: 640px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            h3 {
+                font-size: 1.15rem;
+            }
+
+            nav ul {
+                gap: 1rem;
+                font-size: 0.9rem;
+            }
+
+            .container {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="privacy-policy.html" aria-current="page">Privacy Policy</a></li>
+                <li><a href="terms-of-service.html">Termini di Servizio</a></li>
+                <li><a href="support.html">Supporto</a></li>
+                <li><a href="delete-account.html">Elimina Account</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Privacy Policy</h1>
+            <p class="last-updated">Ultimo aggiornamento: 1 gennaio 2025</p>
+
+            <div class="toc">
+                <h2>Indice</h2>
+                <ul>
+                    <li><a href="#introduzione">1. Introduzione</a></li>
+                    <li><a href="#titolare">2. Titolare del Trattamento</a></li>
+                    <li><a href="#dati-raccolti">3. Dati Raccolti</a></li>
+                    <li><a href="#finalita">4. Finalità del Trattamento</a></li>
+                    <li><a href="#base-giuridica">5. Base Giuridica</a></li>
+                    <li><a href="#conservazione">6. Conservazione dei Dati</a></li>
+                    <li><a href="#diritti-utente">7. Diritti dell'Utente</a></li>
+                    <li><a href="#sicurezza">8. Misure di Sicurezza</a></li>
+                    <li><a href="#terze-parti">9. Condivisione con Terze Parti</a></li>
+                    <li><a href="#minori">10. Minori</a></li>
+                    <li><a href="#modifiche">11. Modifiche alla Privacy Policy</a></li>
+                    <li><a href="#contatti">12. Contatti</a></li>
+                    <li><a href="#autorita">13. Autorità di Controllo</a></li>
+                </ul>
+            </div>
+
+            <section id="introduzione">
+                <h2>1. Introduzione</h2>
+                <p>
+                    La presente Privacy Policy descrive come l'applicazione mobile <strong>Salute In Tasca</strong>
+                    raccoglie, utilizza, conserva e protegge i tuoi dati personali e sanitari in conformità con il
+                    Regolamento Generale sulla Protezione dei Dati (GDPR - Regolamento UE 2016/679) e il Codice
+                    Privacy Italiano (D.Lgs. 196/2003 e successive modifiche).
+                </p>
+                <p>
+                    Utilizzando l'app accetti i termini di questa Privacy Policy. Ti invitiamo a leggerla attentamente.
+                </p>
+            </section>
+
+            <section id="titolare">
+                <h2>2. Titolare del Trattamento</h2>
+                <p>Il Titolare del trattamento dei dati personali è:</p>
+                <div class="info-box">
+                    <p><strong>Titolare:</strong> [NOME/AZIENDA]</p>
+                    <p><strong>Email:</strong> <a href="mailto:privacy@saluteintasca.it">privacy@saluteintasca.it</a></p>
+                    <p><strong>Indirizzo:</strong> [INDIRIZZO COMPLETO]</p>
+                </div>
+            </section>
+
+            <section id="dati-raccolti">
+                <h2>3. Dati Raccolti</h2>
+                <p>L'app raccoglie diverse categorie di dati per fornire i propri servizi:</p>
+
+                <h3>3.1 Dati Personali</h3>
+                <ul>
+                    <li>Nome e cognome</li>
+                    <li>Data di nascita</li>
+                    <li>Codice fiscale (opzionale)</li>
+                    <li>Indirizzo email (se fornito)</li>
+                    <li>Numero di telefono (opzionale)</li>
+                </ul>
+
+                <h3>3.2 Dati Sanitari (Categorie Particolari - Art. 9 GDPR)</h3>
+                <div class="warning-box">
+                    <p>
+                        <strong>ATTENZIONE:</strong> I dati sanitari sono categorie particolari di dati personali
+                        che richiedono una protezione speciale secondo l'Art. 9 del GDPR. Il trattamento di tali
+                        dati avviene solo con il tuo consenso esplicito.
+                    </p>
+                </div>
+                <p>I dati sanitari raccolti includono:</p>
+                <ul>
+                    <li>Appuntamenti medici e visite specialistiche</li>
+                    <li>Referti ed esami clinici (analisi, radiografie, ecc.)</li>
+                    <li>Vaccinazioni e certificati vaccinali</li>
+                    <li>Parametri vitali (pressione arteriosa, glicemia, peso, altezza, temperatura)</li>
+                    <li>Terapie farmacologiche e farmaci assunti</li>
+                    <li>Allergie e intolleranze</li>
+                    <li>Documenti sanitari caricati dall'utente</li>
+                </ul>
+
+                <h3>3.3 Dati di Utilizzo</h3>
+                <ul>
+                    <li>Informazioni sul dispositivo (modello, sistema operativo, versione app)</li>
+                    <li>Dati di utilizzo dell'app (funzionalità utilizzate, frequenza di accesso)</li>
+                    <li>Dati analitici anonimi per migliorare l'esperienza utente</li>
+                    <li>Segnalazioni di crash o errori tecnici</li>
+                </ul>
+            </section>
+
+            <section id="finalita">
+                <h2>4. Finalità del Trattamento</h2>
+                <p>I tuoi dati vengono trattati per le seguenti finalità:</p>
+                <ul>
+                    <li><strong>Fornire i servizi dell'app:</strong> gestione della cartella medica personale, promemoria, archiviazione documenti</li>
+                    <li><strong>Gestire il tuo account:</strong> creazione, manutenzione e supporto del profilo utente</li>
+                    <li><strong>Inviare notifiche:</strong> promemoria per appuntamenti, farmaci e vaccinazioni</li>
+                    <li><strong>Migliorare l'app:</strong> analisi anonime per ottimizzare funzionalità e prestazioni</li>
+                    <li><strong>Supporto tecnico:</strong> assistenza per problemi tecnici e richieste di supporto</li>
+                    <li><strong>Adempiere obblighi legali:</strong> quando richiesto dalla normativa vigente</li>
+                </ul>
+            </section>
+
+            <section id="base-giuridica">
+                <h2>5. Base Giuridica del Trattamento (Art. 6 GDPR)</h2>
+                <p>Il trattamento dei tuoi dati si basa sulle seguenti basi giuridiche:</p>
+                <ul>
+                    <li>
+                        <strong>Consenso esplicito (Art. 6.1.a e Art. 9.2.a GDPR):</strong> Per il trattamento
+                        dei dati sanitari (categorie particolari), richiediamo il tuo consenso esplicito e
+                        informato che puoi revocare in qualsiasi momento.
+                    </li>
+                    <li>
+                        <strong>Esecuzione del contratto (Art. 6.1.b GDPR):</strong> Per fornire i servizi
+                        dell'app che hai richiesto utilizzandola.
+                    </li>
+                    <li>
+                        <strong>Interesse legittimo (Art. 6.1.f GDPR):</strong> Per migliorare la sicurezza
+                        dell'app e prevenire abusi.
+                    </li>
+                    <li>
+                        <strong>Obblighi di legge (Art. 6.1.c GDPR):</strong> Quando richiesto dalla normativa vigente.
+                    </li>
+                </ul>
+            </section>
+
+            <section id="conservazione">
+                <h2>6. Conservazione dei Dati</h2>
+                <p>I tuoi dati vengono conservati secondo i seguenti criteri:</p>
+                <ul>
+                    <li>
+                        <strong>Dati personali e sanitari:</strong> Per tutta la durata dell'utilizzo dell'app
+                        e fino a quando non richiedi la cancellazione del tuo account.
+                    </li>
+                    <li>
+                        <strong>Backup cloud:</strong> Se hai attivato il backup su iCloud o Google Drive,
+                        i dati vengono conservati fino alla cancellazione dell'account e rimossi definitivamente
+                        entro 30 giorni dalla richiesta.
+                    </li>
+                    <li>
+                        <strong>Log di sistema:</strong> I log tecnici anonimi vengono conservati per un massimo
+                        di 90 giorni per scopi di sicurezza e debugging.
+                    </li>
+                    <li>
+                        <strong>Dopo la cancellazione:</strong> Una volta eliminato l'account, tutti i dati
+                        vengono rimossi in modo permanente e irreversibile.
+                    </li>
+                </ul>
+            </section>
+
+            <section id="diritti-utente">
+                <h2>7. Diritti dell'Utente (Art. 15-22 GDPR)</h2>
+                <p>In qualità di utente, hai i seguenti diritti relativi ai tuoi dati personali:</p>
+                <ul>
+                    <li>
+                        <strong>Diritto di accesso (Art. 15):</strong> Puoi richiedere una copia di tutti i
+                        tuoi dati personali che trattiamo.
+                    </li>
+                    <li>
+                        <strong>Diritto di rettifica (Art. 16):</strong> Puoi correggere o aggiornare dati
+                        inesatti o incompleti direttamente dall'app.
+                    </li>
+                    <li>
+                        <strong>Diritto alla cancellazione (Art. 17 - "Diritto all'oblio"):</strong> Puoi
+                        richiedere l'eliminazione completa del tuo account e di tutti i tuoi dati.
+                    </li>
+                    <li>
+                        <strong>Diritto alla portabilità (Art. 20):</strong> Puoi esportare i tuoi dati in
+                        formato strutturato e leggibile (PDF/CSV).
+                    </li>
+                    <li>
+                        <strong>Diritto di opposizione (Art. 21):</strong> Puoi opporti al trattamento dei
+                        tuoi dati per specifiche finalità.
+                    </li>
+                    <li>
+                        <strong>Diritto di limitazione (Art. 18):</strong> Puoi richiedere la limitazione
+                        del trattamento in determinate circostanze.
+                    </li>
+                    <li>
+                        <strong>Revoca del consenso:</strong> Puoi revocare il consenso al trattamento dei
+                        dati sanitari in qualsiasi momento, senza pregiudicare la liceità del trattamento
+                        effettuato prima della revoca.
+                    </li>
+                </ul>
+                <p>
+                    Per esercitare i tuoi diritti, contattaci all'indirizzo:
+                    <a href="mailto:privacy@saluteintasca.it">privacy@saluteintasca.it</a>
+                </p>
+                <p>Risponderemo alla tua richiesta entro 30 giorni, come previsto dal GDPR.</p>
+            </section>
+
+            <section id="sicurezza">
+                <h2>8. Misure di Sicurezza</h2>
+                <p>
+                    La sicurezza dei tuoi dati è la nostra priorità assoluta. Implementiamo misure tecniche e
+                    organizzative avanzate per proteggere i tuoi dati personali e sanitari:
+                </p>
+                <ul>
+                    <li>
+                        <strong>Crittografia end-to-end:</strong> Tutti i dati sanitari sensibili sono
+                        crittografati con algoritmi AES-256 sia a riposo che in transito.
+                    </li>
+                    <li>
+                        <strong>Archiviazione locale:</strong> I dati vengono salvati principalmente sul
+                        tuo dispositivo, garantendoti il pieno controllo.
+                    </li>
+                    <li>
+                        <strong>Autenticazione biometrica:</strong> Supporto per Face ID, Touch ID e
+                        riconoscimento facciale Android per proteggere l'accesso all'app.
+                    </li>
+                    <li>
+                        <strong>Backup crittografati:</strong> Se attivi il backup su cloud (iCloud/Google Drive),
+                        i dati vengono crittografati prima dell'upload.
+                    </li>
+                    <li>
+                        <strong>Nessun server centrale:</strong> Non manteniamo una copia dei tuoi dati
+                        sanitari su server esterni (salvo backup cloud opzionali).
+                    </li>
+                    <li>
+                        <strong>Aggiornamenti regolari:</strong> L'app viene costantemente aggiornata per
+                        correggere vulnerabilità di sicurezza.
+                    </li>
+                    <li>
+                        <strong>Protezione da accessi non autorizzati:</strong> Implementiamo controlli
+                        di sicurezza per prevenire accessi non autorizzati ai dati.
+                    </li>
+                </ul>
+            </section>
+
+            <section id="terze-parti">
+                <h2>9. Condivisione con Terze Parti</h2>
+                <p>
+                    <strong>I tuoi dati sanitari NON vengono mai venduti o condivisi con terze parti per
+                    scopi commerciali.</strong>
+                </p>
+                <p>Condividiamo dati solo nei seguenti casi limitati:</p>
+                <ul>
+                    <li>
+                        <strong>Apple/Google (backup cloud):</strong> Se attivi il backup, i dati vengono
+                        archiviati su iCloud (Apple) o Google Drive (Google) in forma crittografata.
+                        Questi servizi sono soggetti alle rispettive privacy policy.
+                    </li>
+                    <li>
+                        <strong>Firebase Analytics (Google):</strong> Utilizziamo Firebase per raccogliere
+                        dati anonimi di utilizzo (crash report, statistiche anonime). Questi dati NON
+                        includono informazioni sanitarie identificabili.
+                    </li>
+                    <li>
+                        <strong>Obblighi legali:</strong> Possiamo divulgare dati se richiesto da leggi,
+                        regolamenti o ordini giudiziari.
+                    </li>
+                </ul>
+            </section>
+
+            <section id="minori">
+                <h2>10. Minori</h2>
+                <p>
+                    L'app può essere utilizzata per gestire i dati sanitari di minori di 18 anni sotto la
+                    responsabilità del genitore o tutore legale. Il genitore/tutore è responsabile del
+                    consenso al trattamento dei dati del minore e deve garantire che i dati inseriti siano
+                    accurati e aggiornati.
+                </p>
+                <p>
+                    Per questioni relative ai dati di minori, contattaci a:
+                    <a href="mailto:privacy@saluteintasca.it">privacy@saluteintasca.it</a>
+                </p>
+            </section>
+
+            <section id="modifiche">
+                <h2>11. Modifiche alla Privacy Policy</h2>
+                <p>
+                    Ci riserviamo il diritto di modificare questa Privacy Policy in qualsiasi momento per
+                    riflettere cambiamenti normativi o miglioramenti dell'app. In caso di modifiche sostanziali,
+                    gli utenti verranno informati tramite:
+                </p>
+                <ul>
+                    <li>Notifica in-app</li>
+                    <li>Email (se fornita)</li>
+                    <li>Aggiornamento della data in cima a questa pagina</li>
+                </ul>
+                <p>
+                    Ti invitiamo a consultare periodicamente questa pagina per rimanere aggiornato sulle nostre
+                    pratiche di privacy.
+                </p>
+            </section>
+
+            <section id="contatti">
+                <h2>12. Contatti</h2>
+                <p>Per qualsiasi domanda, richiesta o dubbio riguardante questa Privacy Policy e il trattamento dei tuoi dati, puoi contattarci a:</p>
+                <div class="info-box">
+                    <p><strong>Email Privacy:</strong> <a href="mailto:privacy@saluteintasca.it">privacy@saluteintasca.it</a></p>
+                    <p><strong>Supporto Generale:</strong> <a href="mailto:support@saluteintasca.it">support@saluteintasca.it</a></p>
+                    <p><strong>Pagina di Supporto:</strong> <a href="support.html">support.html</a></p>
+                    <p><strong>Tempo di risposta:</strong> Entro 30 giorni dalla richiesta</p>
+                </div>
+            </section>
+
+            <section id="autorita">
+                <h2>13. Autorità di Controllo</h2>
+                <p>
+                    Hai il diritto di proporre reclamo all'Autorità Garante per la Protezione dei Dati Personali
+                    se ritieni che il trattamento dei tuoi dati violi il GDPR:
+                </p>
+                <div class="info-box">
+                    <p><strong>Garante per la Protezione dei Dati Personali</strong></p>
+                    <p>Piazza Venezia, 11 - 00187 Roma, Italia</p>
+                    <p><strong>Email:</strong> <a href="mailto:garante@gpdp.it">garante@gpdp.it</a></p>
+                    <p><strong>Telefono:</strong> +39 06 696771</p>
+                    <p><strong>Sito web:</strong> <a href="https://www.garanteprivacy.it" target="_blank" rel="noopener noreferrer">www.garanteprivacy.it</a></p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Salute In Tasca. Tutti i diritti riservati.</p>
+            <p>
+                <a href="mailto:privacy@saluteintasca.it">privacy@saluteintasca.it</a> |
+                <a href="mailto:support@saluteintasca.it">support@saluteintasca.it</a>
+            </p>
+            <p>
+                <a href="index.html">Home</a> |
+                <a href="privacy-policy.html">Privacy Policy</a> |
+                <a href="terms-of-service.html">Termini di Servizio</a> |
+                <a href="support.html">Supporto</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
