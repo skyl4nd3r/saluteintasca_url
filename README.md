@@ -1,48 +1,60 @@
 # Salute In Tasca - GitHub Pages
 
-Sito ufficiale con documentazione legale e supporto per l'app **Salute In Tasca**.
+Sito ufficiale con documentazione legale e supporto per l'app **Salute In Tasca** - La tua cartella medica personale con crittografia AES-256.
+
+## 📱 L'App
+
+**Salute In Tasca** è un'applicazione mobile per la gestione personale della documentazione sanitaria che ti consente di:
+
+- Archiviare in modo sicuro documenti medici, referti ed esami
+- Gestire appuntamenti e visite con promemoria
+- Tracciare spese sanitarie con analisi dettagliate
+- Mantenere un profilo sanitario completo
+- Ricevere suggerimenti AI per la prevenzione
+- Esportare tutti i tuoi dati in formato JSON/PDF
+
+Tutti i dati sanitari sono protetti con **crittografia AES-256** e storage locale sicuro.
 
 ## 🔗 Link Utili
 
-- 📱 [App Store](LINK_APP_STORE)
-- 🤖 [Google Play Store](LINK_PLAY_STORE)
-- 🌐 [Sito Web](https://tuousername.github.io/saluteintasca_url)
+- 📱 [App Store](LINK_APP_STORE) *(in arrivo)*
+- 🤖 [Google Play Store](LINK_PLAY_STORE) *(in arrivo)*
+- 🌐 [Sito Web](https://skyl4nd3r.github.io/saluteintasca_url)
 
 ## 📄 Pagine Disponibili
 
-- [Homepage](https://tuousername.github.io/saluteintasca_url/) - Presentazione dell'app e funzionalità principali
-- [Privacy Policy](https://tuousername.github.io/saluteintasca_url/privacy-policy.html) - Informativa completa sulla privacy conforme GDPR
-- [Termini di Servizio](https://tuousername.github.io/saluteintasca_url/terms-of-service.html) - Condizioni di utilizzo dell'app
-- [Supporto](https://tuousername.github.io/saluteintasca_url/support.html) - FAQ e assistenza utenti
-- [Eliminazione Account](https://tuousername.github.io/saluteintasca_url/delete-account.html) - Guida per eliminare account e dati
+- [Homepage](https://skyl4nd3r.github.io/saluteintasca_url/) - Informazioni sull'app e funzionalità
+- [Privacy Policy](https://skyl4nd3r.github.io/saluteintasca_url/privacy-policy.html) - Informativa privacy conforme GDPR
+- [Termini di Servizio](https://skyl4nd3r.github.io/saluteintasca_url/terms-of-service.html) - Condizioni d'uso dell'app
+- [Supporto](https://skyl4nd3r.github.io/saluteintasca_url/support.html) - FAQ e assistenza
+- [Eliminazione Account](https://skyl4nd3r.github.io/saluteintasca_url/delete-account.html) - Come eliminare i tuoi dati
 
 ## 🛠️ Tecnologie
 
-- **HTML5** puro (no framework esterni)
-- **CSS3** inline/embedded con design system iOS
-- **Responsive** mobile-first design
-- **Accessibilità** WCAG 2.1 livello AA
-- **SEO** ottimizzato con meta tags e Open Graph
+- HTML5 puro (nessun framework esterno)
+- CSS3 inline/embedded
+- Responsive mobile-first design
+- Accessibilità WCAG 2.1 livello AA
+- Meta tags SEO e Open Graph
 
-## 📱 Caratteristiche del Design
+## 🔒 Privacy e Sicurezza
 
-### Colori
-- Primary Blue: `#007AFF` (iOS standard)
-- Surface Light: `#F2F2F7` (iOS background)
-- Testo: San Francisco font stack (-apple-system)
+L'app implementa le seguenti misure di sicurezza:
 
-### Responsive Breakpoints
-- Mobile: < 640px
-- Tablet: 640px - 1024px
-- Desktop: > 1024px
+- **Crittografia AES-256** per tutti i dati sanitari sensibili
+- **FlutterSecureStorage** per storage locale sicuro
+- **Supabase** per backend e sincronizzazione sicura
+- **Protezione biometrica** (Face ID / Touch ID)
+- **HTTPS/TLS** per tutte le comunicazioni
+- **Sincronizzazione multi-dispositivo** con chiavi crittografiche
 
 ## 📋 Conformità
 
 - ✅ **GDPR** (Regolamento UE 2016/679)
+- ✅ **Codice Privacy Italiano** (D.Lgs. 196/2003)
 - ✅ **Apple App Store Guidelines**
 - ✅ **Google Play Store Policies**
-- ✅ **Codice Privacy Italiano** (D.Lgs. 196/2003)
-- ✅ **WCAG 2.1 AA** (Accessibilità web)
+- ✅ **Art. 9 GDPR** - Trattamento categorie particolari di dati (dati sanitari)
 
 ## 📂 Struttura File
 
@@ -56,50 +68,109 @@ Sito ufficiale con documentazione legale e supporto per l'app **Salute In Tasca*
 ├── assets/                 # (opzionale) Logo e immagini
 │   ├── logo.png
 │   └── favicon.ico
+├── PROMPT.md              # Specifiche originali
 └── README.md              # Questo file
 ```
+
+## 💻 Requisiti Sistema
+
+### iOS
+- iOS 14.0 o successivo
+- iPhone 6s o successivo
+- iPad (5ª generazione) o successivo
+
+### Android
+- Android 8.0 (Oreo) o successivo
+- 50 MB di spazio di archiviazione
 
 ## 🚀 Deployment su GitHub Pages
 
 ### Setup Iniziale
 
-1. **Crea il repository** su GitHub
-2. Vai su **Settings** → **Pages**
-3. Seleziona:
+1. Vai su **Settings** → **Pages** del repository
+2. Seleziona:
    - **Source:** Deploy from a branch
    - **Branch:** `main`
-   - **Folder:** `/root` (o `/docs` se preferisci)
-4. Clicca **Save**
+   - **Folder:** `/ (root)`
+3. Clicca **Save**
 
 ### URL Finale
 
-Il sito sarà disponibile su:
+Il sito è disponibile su:
 ```
-https://tuousername.github.io/saluteintasca_url/
+https://skyl4nd3r.github.io/saluteintasca_url/
 ```
 
 ### Aggiornamenti
 
 Ogni commit sul branch `main` aggiornerà automaticamente il sito entro 1-2 minuti.
 
-## ⚙️ Personalizzazione
+## ⚙️ Informazioni da Sostituire
 
-Prima della pubblicazione, sostituisci i seguenti placeholder in tutti i file HTML:
+Prima della pubblicazione su App Store/Play Store, sostituisci questi placeholder:
 
-- `[NOME/AZIENDA]` → Nome del titolare del trattamento
-- `[EMAIL]` → Email di contatto (es. privacy@saluteintasca.it)
-- `[INDIRIZZO]` → Indirizzo fisico completo dell'azienda/sviluppatore
-- `[DATA]` → Data ultimo aggiornamento (es. 1 gennaio 2025)
-- `[CITTÀ]` → Foro competente (es. Milano, Roma)
-- `[APP_STORE_URL]` → Link completo all'app su App Store
-- `[PLAY_STORE_URL]` → Link completo all'app su Google Play Store
-- `https://tuousername.github.io/saluteintasca_url/` → URL reale del tuo sito
+- `[APP_STORE_URL]` → Link all'app su App Store (quando disponibile)
+- `[PLAY_STORE_URL]` → Link all'app su Google Play Store (quando disponibile)
 
-### Email da Configurare
+## ✅ Informazioni Confermate (Non Sostituire)
 
-- `privacy@saluteintasca.it` - Per richieste privacy e GDPR
-- `support@saluteintasca.it` - Per supporto tecnico
-- `feedback@saluteintasca.it` - Per feedback e suggerimenti
+- **Titolare del trattamento**: Denis Vittorio Truccone
+- **Email di contatto**: denis.truccone@gmail.com
+- **Nome app**: Salute In Tasca
+- **Crittografia**: AES-256
+- **Backend**: Supabase
+- **Storage locale**: FlutterSecureStorage
+- **Requisiti iOS**: iOS 14.0+, iPhone 6s+, iPad 5a gen+
+- **Requisiti Android**: Android 8.0 (Oreo)+, 50 MB di spazio
+- **Conservazione dati**: fino a cancellazione account, backup 30 giorni, log 90 giorni
+- **Tempo di risposta supporto**: Entro 48 ore lavorative
+
+## 📝 Licenza
+
+© 2025 Denis Vittorio Truccone. Tutti i diritti riservati.
+
+Il codice sorgente dell'app è di proprietà esclusiva dello sviluppatore.
+I dati personali e sanitari degli utenti rimangono di loro esclusiva proprietà.
+
+## 📧 Contatti
+
+- **Sviluppatore:** Denis Vittorio Truccone
+- **Email:** denis.truccone@gmail.com
+- **Supporto:** denis.truccone@gmail.com
+- **Tempo di risposta:** Entro 48 ore lavorative
+
+## 🆘 Supporto
+
+Per domande, assistenza o segnalazione bug, contatta:
+- Email: denis.truccone@gmail.com
+- Oppure consulta la [pagina di supporto](https://skyl4nd3r.github.io/saluteintasca_url/support.html)
+
+## 🗑️ Eliminazione Dati
+
+Gli utenti possono eliminare il proprio account e tutti i dati in qualsiasi momento:
+- Dall'app: Profilo → Impostazioni → Elimina Account
+- Via email: denis.truccone@gmail.com
+- Maggiori informazioni: [Pagina eliminazione account](https://skyl4nd3r.github.io/saluteintasca_url/delete-account.html)
+
+**Tempi di cancellazione:**
+- Dati in-app: Immediata
+- Backup cloud: Entro 30 giorni
+- Log di sistema: Entro 90 giorni
+
+## 📖 Risorse Utili
+
+### GDPR e Privacy
+- [Testo GDPR ufficiale](https://eur-lex.europa.eu/eli/reg/2016/679/oj)
+- [Garante Privacy Italia](https://www.garanteprivacy.it/)
+- [Linee guida app sanitarie](https://www.garanteprivacy.it/temi/sanita)
+
+### App Store Guidelines
+- [Apple Developer Guidelines](https://developer.apple.com/app-store/review/guidelines/)
+- [Google Play Policies](https://play.google.com/about/developer-content-policy/)
+
+### Accessibilità
+- [WCAG 2.1 Guidelines](https://www.w3.org/WAI/WCAG21/quickref/)
+- [WebAIM Resources](https://webaim.org/)
 
 ## ✅ Checklist Pre-Pubblicazione
 
@@ -132,52 +203,9 @@ Prima della pubblicazione, sostituisci i seguenti placeholder in tutti i file HT
 - [ ] Tempo di caricamento < 3 secondi
 
 ### Contenuti
-- [ ] Tutti i placeholder sostituiti
+- [ ] Link agli store configurati quando disponibili
 - [ ] Date aggiornate
 - [ ] URL corretti
-- [ ] Link agli store configurati
-
-## 📞 Email di Contatto
-
-### Privacy e GDPR
-- **Email:** privacy@saluteintasca.it
-- **Utilizzo:** Richieste cancellazione dati, accesso dati, reclami GDPR
-
-### Supporto Tecnico
-- **Email:** support@saluteintasca.it
-- **Utilizzo:** Problemi tecnici, domande sull'app, assistenza utenti
-
-### Feedback
-- **Email:** feedback@saluteintasca.it
-- **Utilizzo:** Suggerimenti, idee per nuove funzionalità, segnalazioni bug
-
-## 🔍 SEO e Open Graph
-
-Ogni pagina include:
-- Meta description ottimizzata
-- Meta keywords rilevanti
-- Open Graph tags per condivisione social
-- Canonical URL
-- Sitemap compatibile
-
-## 📖 Risorse Utili
-
-### GDPR e Privacy
-- [Testo GDPR ufficiale](https://eur-lex.europa.eu/eli/reg/2016/679/oj)
-- [Garante Privacy Italia](https://www.garanteprivacy.it/)
-- [Linee guida app sanitarie](https://www.garanteprivacy.it/temi/sanita)
-
-### App Store Guidelines
-- [Apple Developer Guidelines](https://developer.apple.com/app-store/review/guidelines/)
-- [Google Play Policies](https://play.google.com/about/developer-content-policy/)
-
-### Accessibilità
-- [WCAG 2.1 Guidelines](https://www.w3.org/WAI/WCAG21/quickref/)
-- [WebAIM Resources](https://webaim.org/)
-
-### Web Development
-- [MDN Web Docs](https://developer.mozilla.org/)
-- [Can I Use](https://caniuse.com/) - Browser compatibility
 
 ## 📝 Manutenzione
 
@@ -192,31 +220,8 @@ Ogni pagina include:
 - Archivia tutte le modifiche sostanziali per tracciabilità
 - Salva copie locali prima di modifiche importanti
 
-## 📜 Licenza
-
-© 2025 [TUO NOME/AZIENDA]. Tutti i diritti riservati.
-
-Il codice HTML/CSS di questo sito è proprietario di [NOME/AZIENDA]. Non è consentito copiare, modificare o distribuire il codice senza autorizzazione esplicita.
-
-## 🤝 Contributi
-
-Per segnalare errori o proporre miglioramenti al sito:
-- Invia una email a: feedback@saluteintasca.it
-- Descrivi il problema o il suggerimento in dettaglio
-- Includi screenshot se pertinente
-
-## 📊 Statistiche
-
-Per monitorare le visite al sito, considera di integrare:
-- Google Analytics (con consenso cookie GDPR-compliant)
-- Plausible Analytics (privacy-friendly)
-- Fathom Analytics (privacy-focused)
-
-**Nota:** Se aggiungi analytics, aggiorna la Privacy Policy di conseguenza.
-
 ---
 
-**Data creazione:** Gennaio 2025
 **Versione:** 1.0
+**Ultimo aggiornamento:** Novembre 2025
 **Compatibile con:** iOS 14+, Android 8+, GitHub Pages
-**Ultimo aggiornamento:** 1 gennaio 2025

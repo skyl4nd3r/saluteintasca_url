@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Salute In Tasca - La tua cartella medica personale sempre con te. Gestisci appuntamenti, vaccini, referti e documenti sanitari in modo sicuro.">
     <meta name="keywords" content="salute, cartella medica, app sanitaria, gestione salute, appuntamenti medici">
-    <meta name="author" content="Salute In Tasca">
+    <meta name="author" content="Denis Vittorio Truccone">
     <meta name="robots" content="index, follow">
 
     <!-- Open Graph -->
     <meta property="og:title" content="Salute In Tasca - La tua cartella medica personale">
     <meta property="og:description" content="Gestisci la tua salute in modo semplice e sicuro con Salute In Tasca">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://tuousername.github.io/saluteintasca_url/">
+    <meta property="og:url" content="https://skyl4nd3r.github.io/saluteintasca_url/">
 
     <title>Salute In Tasca - La tua cartella medica personale</title>
 
@@ -344,8 +344,10 @@
                     di te e della tua famiglia in modo più efficace.
                 </p>
                 <p>
-                    I tuoi dati sanitari sono preziosi e personali. Per questo utilizziamo crittografia end-to-end e tutti i dati
-                    vengono salvati principalmente sul tuo dispositivo. Hai il pieno controllo della tua cartella medica digitale,
+                    I tuoi dati sanitari sono preziosi e personali. Per questo utilizziamo <strong>crittografia AES-256</strong>
+                    e tutti i dati vengono salvati principalmente sul tuo dispositivo con storage locale sicuro (FlutterSecureStorage).
+                    Le chiavi di crittografia sono generate localmente e sincronizzate su backend sicuro (Supabase) per permetterti
+                    di accedere ai tuoi dati da dispositivi diversi. Hai il pieno controllo della tua cartella medica digitale,
                     sempre e ovunque.
                 </p>
             </div>
@@ -355,14 +357,18 @@
             <div class="container">
                 <h2>Funzionalità Principali</h2>
                 <ul>
-                    <li data-icon="📅">Gestione appuntamenti medici con promemoria automatici</li>
-                    <li data-icon="💉">Registro completo delle vaccinazioni e certificati vaccinali</li>
-                    <li data-icon="📊">Monitoraggio parametri vitali (pressione, glicemia, peso)</li>
-                    <li data-icon="📄">Archiviazione sicura di referti ed esami clinici</li>
-                    <li data-icon="💊">Gestione terapie farmacologiche e promemoria farmaci</li>
-                    <li data-icon="🔒">Protezione dati con crittografia end-to-end</li>
-                    <li data-icon="👨‍👩‍👧‍👦">Gestione multi-profilo per tutta la famiglia</li>
-                    <li data-icon="📤">Esportazione dati in formato PDF</li>
+                    <li data-icon="📅">Gestione appuntamenti medici con promemoria e notifiche</li>
+                    <li data-icon="🏥">Storico completo delle visite mediche</li>
+                    <li data-icon="📄">Archiviazione sicura documenti medici (referti, esami, prescrizioni)</li>
+                    <li data-icon="💰">Tracciamento spese sanitarie con analisi e grafici</li>
+                    <li data-icon="📊">Profilo sanitario completo (allergie, terapie, stile di vita)</li>
+                    <li data-icon="🤖">Suggerimenti AI personalizzati per la prevenzione</li>
+                    <li data-icon="📆">Calendario integrato con promemoria visite</li>
+                    <li data-icon="📤">Esportazione dati in formato JSON/PDF</li>
+                    <li data-icon="🔒">Crittografia AES-256 per tutti i dati sensibili</li>
+                    <li data-icon="🔐">Protezione biometrica (Face ID / Touch ID)</li>
+                    <li data-icon="☁️">Sincronizzazione multi-dispositivo sicura</li>
+                    <li data-icon="📱">Funzionamento offline con storage locale</li>
                 </ul>
             </div>
         </section>
@@ -411,14 +417,14 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Salute In Tasca. Tutti i diritti riservati.</p>
+            <p>&copy; 2025 Denis Vittorio Truccone. Tutti i diritti riservati.</p>
             <p>
-                <a href="mailto:privacy@saluteintasca.it">privacy@saluteintasca.it</a> |
-                <a href="mailto:support@saluteintasca.it">support@saluteintasca.it</a>
+                <a href="mailto:denis.truccone@gmail.com">denis.truccone@gmail.com</a>
             </p>
             <p>
                 <a href="privacy-policy.html">Privacy Policy</a> |
-                <a href="terms-of-service.html">Termini di Servizio</a>
+                <a href="terms-of-service.html">Termini di Servizio</a> |
+                <a href="support.html">Supporto</a>
             </p>
         </div>
     </footer>
